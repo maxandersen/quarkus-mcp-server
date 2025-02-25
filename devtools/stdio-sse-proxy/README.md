@@ -51,5 +51,12 @@ java -jar target/quarkus-mcp-stdio-sse-proxy-1.0.0-SNAPSHOT-runner.jar -e http:/
 You can also run the proxy as a JBang script:
 
 ```shell script
-jbang --quiet src/main/java/io/quarkiverse/mcp/server/proxy/StdioSseProxy.java -h
+jbang src/main/java/io/quarkiverse/mcp/server/proxy/StdioSseProxy.java -h
 ```
+
+or when released to maven use:
+
+```shell script
+jbang io.quarkiverse.mcp:quarkus-mcp-stdio-sse-proxy:RELEASE -h
+```
+
